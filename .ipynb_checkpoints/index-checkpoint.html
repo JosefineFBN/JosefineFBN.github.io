@@ -9,17 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
 
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
-
-            /* Beige base */
             background-color: #f4efe6;
-
-            /* Sketch / paper texture */
-            background-image: 
-                url("https://www.transparenttextures.com/patterns/paper-fibers.png");
-
+            background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
             color: #222;
             line-height: 1.7;
         }
@@ -31,8 +29,8 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-
             background: #e8dfd1;
+            padding: 20px;
         }
 
         header h1 {
@@ -44,19 +42,41 @@
         header p {
             font-size: 20px;
             color: #555;
+            margin-bottom: 40px;
+        }
+
+        /* NAV BOXES */
+        .nav-boxes {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-box {
+            background: #fffaf3;
+            padding: 20px 25px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            text-decoration: none;
+            color: #222;
+            font-weight: 500;
+        }
+
+        .nav-box:hover {
+            transform: translateY(-5px);
+            background: #f0e6d6;
         }
 
         section {
             max-width: 900px;
             margin: 80px auto;
             padding: 40px;
-
-            /* let “papir kort” ovenpå baggrund */
             background: rgba(255, 250, 240, 0.9);
             border-radius: 12px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-
-            position: relative;
         }
 
         .viz {
@@ -86,15 +106,6 @@
             font-size: 18px;
             color: #333;
         }
-
-        /* lille sketchy detalje */
-        section::before {
-            content: "✏️";
-            font-size: 20px;
-            position: absolute;
-            left: -25px;
-            top: 10px;
-        }
     </style>
 </head>
 
@@ -102,10 +113,16 @@
 
 <header>
     <h1>Crime in San Francisco</h1>
-    <p>Exploring two decades of patterns, trends, and anomalies</p>
+    <p>Exploring two decades of patterns and anomalies</p>
+
+    <div class="nav-boxes">
+        <a href="#viz1" class="nav-box">Crime Relationships</a>
+        <a href="#viz2" class="nav-box">Time Patterns</a>
+        <a href="#viz3" class="nav-box">Crime Map</a>
+    </div>
 </header>
 
-<section>
+<section id="viz1">
     <h2>How crimes relate to each other</h2>
     <p>
         This visualization explores relationships between different crime types.
@@ -117,7 +134,7 @@
     </div>
 </section>
 
-<section>
+<section id="viz2">
     <h2>When do crimes happen?</h2>
     <p>
         Crime is not evenly distributed across time. This interactive visualization
@@ -129,7 +146,7 @@
     </div>
 </section>
 
-<section>
+<section id="viz3">
     <h2>Where do crimes happen?</h2>
     <p>
         Spatial patterns reveal hotspots and clusters across the city.
