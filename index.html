@@ -1,10 +1,54 @@
-<h2>Linear Regression visualisation</h2>
-<img 
-    src="Images/Linear_regression_betweenCrimes.png"
-     style="max-width: 100%;">
-
-<h3>Interactive crime visualization</h3>
-<iframe src="Visualization/crime_hourly_interactive.html" width="100%" height="600" frameborder="0"></iframe>
-
-<h4>Heat map</h4>
-<iframe src="Visualization/sf_crime_heatmap.html" width="100%" height="600" frameborder="0"></iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crimes of San Fransisco: Two decades of crime data</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Samme CSS-styling som tidligere */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Crimes of San Fransisco: Two decades of crime data</h1>
+    </header>
+    
+    <section>
+        <div class="text-box">
+            <p>This dataset contains information about crime in San Francisco over a two-decade period. The data can be used to analyze trends, patterns, and the evolution of crime in the city.</p>
+        </div>
+    </section>
+    
+    <section>
+        <div class="visualization-links">
+            <a href="#visualization1">Linear Regression</a>
+            <a href="#visualization2">Interactive Visualization</a>
+            <a href="#visualization3">Heat Map</a>
+        </div>
+    </section>
+    
+    <section id="visualization1">
+        <div class="visualization-container">
+            <h2>Linear Regression visualisation</h2>
+            <img src="Images/Linear_regression_betweenCrimes.png" style="max-width: 100%;">
+        </div>
+    </section>
+    
+    <section id="visualization2">
+        <div class="visualization-container">
+            <h3>Interactive crime visualization</h3>
+            <iframe src="Visualization/crime_hourly_interactive.html" width="100%" height="600" frameborder="0"></iframe>
+        </div>
+    </section>
+    
+    <section id="visualization3">
+        <div class="visualization-container">
+            <h4>Heat map</h4>
+            <iframe src="Visualization/sf_crime_heatmap.html" width="100%" height="600" frameborder="0"></iframe>
+        </div>
+    </section>
+</body>
+</html>
