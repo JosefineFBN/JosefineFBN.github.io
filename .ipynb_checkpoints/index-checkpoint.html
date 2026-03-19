@@ -12,7 +12,14 @@
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
-            background: #f4efe6; /* beige */
+
+            /* Beige base */
+            background-color: #f4efe6;
+
+            /* Sketch / paper texture */
+            background-image: 
+                url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+
             color: #222;
             line-height: 1.7;
         }
@@ -24,6 +31,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+
             background: #e8dfd1;
         }
 
@@ -42,9 +50,13 @@
             max-width: 900px;
             margin: 80px auto;
             padding: 40px;
-            background: #fffaf3;
+
+            /* let “papir kort” ovenpå baggrund */
+            background: rgba(255, 250, 240, 0.9);
             border-radius: 12px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+
+            position: relative;
         }
 
         .viz {
@@ -75,16 +87,13 @@
             color: #333;
         }
 
-        /* lille sketchy detail */
+        /* lille sketchy detalje */
         section::before {
             content: "✏️";
             font-size: 20px;
             position: absolute;
-            margin-left: -25px;
-        }
-
-        section {
-            position: relative;
+            left: -25px;
+            top: 10px;
         }
     </style>
 </head>
