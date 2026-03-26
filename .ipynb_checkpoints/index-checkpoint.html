@@ -54,7 +54,7 @@
             margin: 80px auto;
         }
 
-        /* 🔥 TEXT BOX */
+        /* TEXT BOX */
         .text-box {
             max-width: 700px;
             margin: 0 auto 30px auto;
@@ -64,10 +64,10 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.05);
         }
 
-        /* 🔥 FIGURES SAME WIDTH AS TEXT */
+        /* FIGURES SAME WIDTH */
         .viz {
-            max-width: 700px; /* 👈 SAME AS TEXT */
-            margin: 0 auto 80px auto; /* center + spacing */
+            max-width: 700px;
+            margin: 0 auto 80px auto;
         }
 
         iframe {
@@ -95,6 +95,34 @@
             font-size: 18px;
             color: #333;
         }
+
+        /* REFERENCES */
+        .references {
+            max-width: 700px;
+            margin: 100px auto;
+        }
+
+        .references h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .references p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            text-indent: -20px;
+            padding-left: 20px;
+        }
+
+        .references a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -106,7 +134,7 @@
     </h1>
 
     <p>
-        Drawing on two decades of data, this analysis uncovers how assault and robbery are interconnected across San Francisco's urban landscape. Want to know where it's safe to explore - and where to stay cautious? Read on.
+        Drawing on two decades of data, this analysis uncovers how assault and robbery are interconnected across San Francisco's urban landscape. Want to know where it's safe to explore—and where to stay cautious? Read on.
     </p>
 </header>
 
@@ -124,33 +152,6 @@
     </div>
 </section>
 
-<section id="viz2">
-    <div class="text-box">
-        <h2>When do crimes happen?</h2>
-        <p>
-            Crime is not evenly distributed across time. This interactive visualization
-            shows how activity fluctuates throughout the week.
-        </p>
-    </div>
-
-    <div class="viz">
-        <iframe src="Visualization/crime_hourly_interactive.html"></iframe>
-    </div>
-</section>
-
-<section id="viz3">
-    <div class="text-box">
-        <h2>Where do crimes happen?</h2>
-        <p>
-            Spatial patterns reveal hotspots and clusters across the city.
-        </p>
-    </div>
-
-    <div class="viz">
-        <iframe src="Visualization/sf_crime_heatmap.html"></iframe>
-    </div>
-</section>
-
 <section id="viz4">
     <div class="text-box">
         <h2>Where do Assault and Robbery often happen relative to crimes in the city?</h2>
@@ -163,8 +164,11 @@
         <iframe src="Visualization/crime_probability_by_district.html"></iframe>
     </div>
 </section>
-    <section class="references">
+
+<!-- REFERENCES -->
+<section class="references">
     <h2>References</h2>
+
     <p>
         “San Francisco.” (n.d.). In <em>Wikipedia</em>. Retrieved March 26, 2026, from 
         <a href="https://en.wikipedia.org/wiki/San_Francisco" target="_blank">
