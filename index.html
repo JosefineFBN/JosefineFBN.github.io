@@ -14,7 +14,7 @@
         }
 
         body {
-            font-family: 'Source Serif 4', serif; /* 👈 NEW */
+            font-family: 'Source Serif 4', serif;
             margin: 0;
             background-color: #f4efe6;
             background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
@@ -22,9 +22,8 @@
             line-height: 1.75;
         }
 
-        /* 🔥 HEADER (LESS TALL) */
         header {
-            height: 65vh; /* 👈 reduced */
+            height: 65vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -36,7 +35,7 @@
 
         header h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 60px; /* slightly reduced */
+            font-size: 60px;
             font-weight: 700;
             letter-spacing: -0.5px;
             line-height: 1.15;
@@ -55,7 +54,6 @@
             margin: 80px auto;
         }
 
-        /* TEXT BOX */
         .text-box {
             max-width: 700px;
             margin: 0 auto 30px auto;
@@ -65,7 +63,6 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.05);
         }
 
-        /* FIGURES SAME WIDTH */
         .viz {
             max-width: 700px;
             margin: 0 auto 80px auto;
@@ -92,14 +89,21 @@
             margin-bottom: 10px;
         }
 
-        /* 🔥 BODY TEXT (IMPROVED) */
         p {
-            font-size: 16.5px; /* 👈 smaller */
+            font-size: 16.5px;
             color: #333;
             line-height: 1.75;
         }
 
-        /* REFERENCES */
+        /* 🔥 FIGURE CAPTION */
+        .fig-caption {
+            max-width: 700px;
+            margin: -60px auto 60px auto;
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+
         .references {
             max-width: 700px;
             margin: 100px auto;
@@ -173,9 +177,13 @@ Looking at the statistical relation of the two crimes in figure !!!!1!!!! it can
     <div class="viz">
         <iframe src="Visualization/crime_probability_by_district.html"></iframe>
     </div>
+
+    <p class="fig-caption">
+        The relative risk of the occurance of incidents of Assualt and Robbery in San Fransisco. This is shown by data from two dacades covering incidents of Assault and Robbery in the districts of San francisco from 2003-2025.
+    </p>
 </section>
-    
- <div class="text-box">
+
+<div class="text-box">
      <p>
            Looking at the map, at first glance one might find that the spatial distributions between the two crimes are similar. In particular, it is fair to say that both crimes tend to occur in the south-eastern area of San Fracisco. For instance, looking at the district Tenderloin, both Assaults and Robberies occurs more frequently. This is not surprising as Terderloin has the highest crime rate in San Francisco and is known for its violent streets, despite its small size (San Francisco, n.d.). 
       </p>
@@ -188,7 +196,6 @@ However, taking a closer look noteable differences appear. While robbery occurs 
 The spatial distributions should be seen as one parameter when exploring the correlation but it also suggests that other parameters should be considered.  
         </p>
 
-     
 <section class="references">
     <h2>References</h2>
 
