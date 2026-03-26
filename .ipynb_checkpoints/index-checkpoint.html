@@ -6,7 +6,7 @@
     <title>Crimes of San Francisco</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Playfair+Display:wght@600;700&family=Source+Serif+4:wght@400;500&display=swap" rel="stylesheet">
 
     <style>
         html {
@@ -14,39 +14,40 @@
         }
 
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Source Serif 4', serif; /* 👈 NEW */
             margin: 0;
             background-color: #f4efe6;
             background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
             color: #222;
-            line-height: 1.7;
+            line-height: 1.75;
         }
 
+        /* 🔥 HEADER (LESS TALL) */
         header {
-            height: 100vh;
+            height: 65vh; /* 👈 reduced */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             background: #e8dfd1;
-            padding: 40px 20px;
+            padding: 30px 20px;
         }
 
         header h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 64px;
+            font-size: 60px; /* slightly reduced */
             font-weight: 700;
             letter-spacing: -0.5px;
             line-height: 1.15;
             max-width: 1100px;
+            margin-bottom: 20px;
         }
 
         header p {
-            font-size: 20px;
+            font-size: 18px;
             color: #555;
-            margin-bottom: 40px;
-            max-width: 800px;
+            max-width: 700px;
         }
 
         section {
@@ -58,7 +59,7 @@
         .text-box {
             max-width: 700px;
             margin: 0 auto 30px auto;
-            padding: 40px;
+            padding: 35px;
             background: rgba(255, 250, 240, 0.95);
             border-radius: 12px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.05);
@@ -85,15 +86,17 @@
 
         h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 36px;
+            font-size: 34px;
             font-weight: 600;
             letter-spacing: -0.3px;
             margin-bottom: 10px;
         }
 
+        /* 🔥 BODY TEXT (IMPROVED) */
         p {
-            font-size: 18px;
+            font-size: 16.5px; /* 👈 smaller */
             color: #333;
+            line-height: 1.75;
         }
 
         /* REFERENCES */
@@ -103,12 +106,12 @@
         }
 
         .references h2 {
-            font-size: 28px;
+            font-size: 26px;
             margin-bottom: 20px;
         }
 
         .references p {
-            font-size: 16px;
+            font-size: 15px;
             line-height: 1.6;
             margin-bottom: 15px;
             text-indent: -20px;
@@ -165,7 +168,6 @@
     </div>
 </section>
 
-<!-- REFERENCES -->
 <section class="references">
     <h2>References</h2>
 
