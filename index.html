@@ -33,7 +33,6 @@
             padding: 40px 20px;
         }
 
-        /* 🔥 HEADER (KEEP WIDE) */
         header h1 {
             font-family: 'Playfair Display', serif;
             font-size: 64px;
@@ -50,28 +49,25 @@
             max-width: 800px;
         }
 
-        /* ❌ REMOVE NAV BOXES */
-        .nav-boxes {
-            display: none;
-        }
-
-        /* 🔥 SECTION (WIDE CONTAINER) */
+        /* 🔥 SECTION WRAPPER (no background now) */
         section {
             max-width: 1100px;
             margin: 80px auto;
-            padding: 50px;
-            background: rgba(255, 250, 240, 0.9);
+        }
+
+        /* 🔥 TEXT BOX (only text gets beige box) */
+        .text-box {
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            padding: 40px;
+            background: rgba(255, 250, 240, 0.95);
             border-radius: 12px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.05);
         }
 
-        /* 🔥 TEXT CONTAINER (NARROWER) */
-        .text-content {
-            max-width: 700px;
-        }
-
+        /* 🔥 VISUAL FULL WIDTH */
         .viz {
-            margin-top: 30px;
+            margin-top: 20px;
         }
 
         iframe {
@@ -87,17 +83,14 @@
             margin-top: 10px;
         }
 
-        /* 🔥 SECTION TITLES */
         h2 {
             font-family: 'Playfair Display', serif;
             font-size: 36px;
             font-weight: 600;
             letter-spacing: -0.3px;
             margin-bottom: 10px;
-            max-width: 700px; /* 👈 aligns with text */
         }
 
-        /* 🔥 TEXT */
         p {
             font-size: 18px;
             color: #333;
@@ -118,7 +111,7 @@
 </header>
 
 <section id="viz1">
-    <div class="text-content">
+    <div class="text-box">
         <h2>How crimes relate to each other</h2>
         <p>
             This visualization explores relationships between different crime types.
@@ -132,7 +125,7 @@
 </section>
 
 <section id="viz2">
-    <div class="text-content">
+    <div class="text-box">
         <h2>When do crimes happen?</h2>
         <p>
             Crime is not evenly distributed across time. This interactive visualization
@@ -146,7 +139,7 @@
 </section>
 
 <section id="viz3">
-    <div class="text-content">
+    <div class="text-box">
         <h2>Where do crimes happen?</h2>
         <p>
             Spatial patterns reveal hotspots and clusters across the city.
@@ -159,7 +152,7 @@
 </section>
 
 <section id="viz4">
-    <div class="text-content">
+    <div class="text-box">
         <h2>Where do Assault and Robbery often happen relative to crimes in the city?</h2>
         <p>
             Probability of crime relative to crimes in the city.
