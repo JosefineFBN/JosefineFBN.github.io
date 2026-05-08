@@ -63,7 +63,7 @@
         box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     }
 
-    /* centered figures like first image */
+    /* same size for ALL visualizations */
     .viz {
         width: 100%;
         display: flex;
@@ -71,16 +71,13 @@
         margin: 0 auto 30px auto;
     }
 
-    .viz img {
-        width: 125%;
-        max-width: 1250px;
-        border-radius: 10px;
-    }
-
+    .viz img,
     .viz iframe {
-        width: 1250px;
-        max-width: 1250px;
+        width: 1200px;
         height: 700px;
+
+        max-width: 1200px;
+
         border: none;
         border-radius: 10px;
     }
