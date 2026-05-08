@@ -54,7 +54,6 @@
         margin: 50px auto;
     }
 
-    /* wider text boxes */
     .text-box {
         max-width: 900px;
         margin: 0 auto 10px auto;
@@ -64,24 +63,26 @@
         box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     }
 
-    /* wider visualizations */
+    /* centered figures like first image */
     .viz {
+        width: 100%;
         display: flex;
         justify-content: center;
         margin: 0 auto 30px auto;
-        overflow: visible;
     }
 
-    .viz img,
-    .viz iframe {
+    .viz img {
         width: 125%;
-        max-width: none;
+        max-width: 1250px;
         border-radius: 10px;
     }
 
-    iframe {
-        height: 600px;
+    .viz iframe {
+        width: 1250px;
+        max-width: 1250px;
+        height: 700px;
         border: none;
+        border-radius: 10px;
     }
 
     h2 {
