@@ -50,7 +50,7 @@
     }
 
     section {
-        max-width: 100%;
+        max-width: 1100px;
         margin: 50px auto;
     }
 
@@ -66,30 +66,32 @@
 
     /* VISUALIZATION CONTAINER */
     .viz {
+        max-width: 900px;
         width: 100%;
+
         display: flex;
         justify-content: center;
         align-items: center;
+
         margin: 50px auto 20px auto;
     }
 
     /* SAME SIZE FOR ALL FIGURES */
-.viz img,
-.viz iframe {
-    width: 100%;
-    max-width: 1280px;
+    .viz img,
+    .viz iframe {
+        width: 100%;
 
-    aspect-ratio: 16 / 9;
+        aspect-ratio: 16 / 9;
 
-    display: block;
+        display: block;
 
-    object-fit: contain;
+        object-fit: contain;
 
-    border: none;
-    border-radius: 10px;
+        border: none;
+        border-radius: 10px;
 
-    background: white;
-}
+        background: white;
+    }
 
     h2 {
         font-family: 'Playfair Display', serif;
@@ -160,7 +162,7 @@
         <h2>What does the GDP index reveal?</h2>
 
         <p>
-When looking at countries’ CO2 impact per. capita, comparison is inevitable. The arising question when comparing is simple; why do countries differ in CO2 impact per capita? Why do some countries emit more than others? And, is it only the whealthy countries that can afford the green transition?<
+When looking at countries’ CO2 impact per. capita, comparison is inevitable. The arising question when comparing is simple; why do countries differ in CO2 impact per capita? Why do some countries emit more than others? And, is it only the whealthy countries that can afford the green transition?
         </p>
 
         <p>
@@ -196,49 +198,6 @@ Taking a look at figure X, the percentage distribution of energy production by d
 
     <p class="fig-caption">
        Brazil and Denmark's share of enrgy sources in their energy grid.
-    </p>
-
-    <div class="text-box">
-        <p>
-Looking at Denmark’s energy grid’s development from 1990 to now, major differences appear. As the majority of the energy grids’ previously relied on fossil fuels, the energy grid today primary relies on renewable energy. Based on the percentage distribution, this transition from fossil fuel to renewable energy appear to be a relatively recent tendency, as the share of renewable energy increased from 31,9% in 2010 to 81,6% today.<br>
-Looking at the energy grid from Brazil the tendencies is entirely different. Categorizing hydro as a renewable energy, the share of renewable energy has been Brazil’s primary energy source since 1990.  What is interesting here, is that fossil fuel has increased 4,5% in 1990 to 14,2% today, illustrating an opposite tendency compared to Denmark. <br>
-However, even though Denmark and Brazil’s CO2 impact per capita is following entirely different tendencies, their energy grids must be considered similar as they are largely dependent on renewable energy.
-         </p>
-
-         <p>
-One must dig deeper into the energy sector of Brazil and Denmark to examine whether energy plays a role for the impact per capita. A way of doing so is to look at the social behavior in relation to energy. The transport sector plays a crucial role in relation to a countrie’s energy grid, and might indicate whether the citizens’ behavior have transitioned as well. <br>
-Looking at a dataset of locations of gas stations (Overpass Turbo, n.d.) and EV charging stations (openchargemap.org, n.d.) in Brazil and Denmark, the citizens’ behavior reveals the comprehensive green transition . Taking a look at figure X, the share of EV charging stations is 55,6% in Denmark, whereas the Chargin stations account for 9,5% of the infrastructure in Brazil.
-            </p>
-    </div>
-
-    <div class="viz">
-        <iframe src="Visualization/GINI_VS_education.html"></iframe>
-    </div>
-
-    <p class="fig-caption">
-       The share of EV charging station in Brazil and Denmark.
-    </p>
-
-    <div class="text-box">
-        <p>
-This dataset indicates the green transition of the electricity grid is well embedded in the Danish society, and reflects interaction between supply and demand, which is evident in the large proportion of EV charging stations. <br>
-Despite Brazil’s green energy grid, the proportion of EV charging stations is surprisingly low. Whether this can be explained by the fact that only around 20-25% of the population has access to a car (Motor Vehicle in Use 2021, n.d.), the costs associated with electric vehicles, or priorities by the government remains unknown, but the data reflects a society in which the transport sector has not yet undergone a green transition.
-         </p>
-
-        <h2>The significance of education</h2>
-
-        <p>
-Another parameter that is used to both measure and explain a countries wealth is their educational system (Måske mere spørgende?). But how does it look when comparing the educational system for a country that has decoupled the economic growth from the CO2 emissions, with a country that is in the developing phase and still has not? And can the educational system be used to explain the countries CO2 emissions indirectly?  <br>
-To study this further a look in to the Danish and Chines educational systems has been made. In figure below, a distribution of the educational level of the two countries populations can be seen.
-        </p>
-    </div>
-
-    <div class="viz">
-        <img src="Images/education.png">
-    </div>
-
-    <p class="fig-caption">
-       The vizulisation shows the distribution of the educational level of the population of Denmark and China.
     </p>
 
 </section>
