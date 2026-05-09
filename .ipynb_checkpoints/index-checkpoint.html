@@ -27,67 +27,68 @@
     }
 
     /* HEADER */
-header {
+    header {
 
-    min-height: 65vh;
+        min-height: 65vh;
 
-    display: flex;
+        display: flex;
 
-    justify-content: center;
+        justify-content: center;
 
-    align-items: center;
+        align-items: center;
 
-    padding: 40px 20px;
+        padding: 40px 20px;
 
-    background: #bcc6c1;
-}
-/* HEADER CONTENT */
-.header-box {
+        background: #bcc6c1;
+    }
 
-    max-width: 540px;
+    /* HEADER CONTENT */
+    .header-box {
 
-    padding: 0;
+        max-width: 540px;
 
-    margin: 0 auto;
+        padding: 0;
 
-    background: transparent;
+        margin: 0 auto;
 
-    box-shadow: none;
+        background: transparent;
 
-    border-radius: 0;
+        box-shadow: none;
 
-    text-align: center;
-}
+        border-radius: 0;
+
+        text-align: center;
+    }
 
     /* TITLE */
-header h1 {
+    header h1 {
 
-    font-family: 'Playfair Display', serif;
+        font-family: 'Playfair Display', serif;
 
-    font-size: 68px;
+        font-size: 68px;
 
-    line-height: 1.02;
+        line-height: 1.02;
 
-    margin-bottom: 24px;
+        margin-bottom: 24px;
 
-    color: #111;
-}
+        color: #111;
+    }
 
-/* SUBTITLE */
-header p {
+    /* SUBTITLE */
+    header p {
 
-    max-width: 700px;
+        max-width: 700px;
 
-    margin: 0 auto;
+        margin: 0 auto;
 
-    font-size: 20px;
+        font-size: 20px;
 
-    line-height: 1.7;
+        line-height: 1.7;
 
-    color: #4b4b4b;
-}
+        color: #4b4b4b;
+    }
 
-section {
+    section {
 
         max-width: 1100px;
 
@@ -97,51 +98,50 @@ section {
     /* TEXT BOXES */
     .text-box {
 
-    max-width: 850px;
+        max-width: 850px;
 
-    margin: 0 auto 12px auto;
+        margin: 0 auto 12px auto;
 
-    padding: 28px;
+        padding: 28px;
 
-    background: #d9dfda;
+        background: #d9dfda;
 
-    border-radius: 10px;
+        border-radius: 10px;
 
-    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-}
-.authors {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    }
 
-    position: relative;
+    /* AUTHORS */
+    .authors {
 
-    left: -260px;
+        position: relative;
 
-    margin-top: 26px;
+        left: -260px;
 
-    font-size: 15px;
+        margin-top: 26px;
 
-    line-height: 1.8;
+        font-size: 15px;
 
-    color: #4b4b4b;
+        line-height: 1.8;
 
-    text-align: left;
-}
+        color: #4b4b4b;
+
+        text-align: left;
+    }
+
     /* VISUALIZATION CONTAINER */
-   .viz {
+    .viz {
 
-    max-width: 760px;
+        width: 100%;
 
-    width: 100%;
+        max-width: 980px;
 
-    display: flex;
+        margin: 12px auto;
 
-    justify-content: center;
+        display: flex;
 
-    align-items: center;
-
-    margin: 18px auto 10px auto;
-
-    overflow-x: hidden;
-}
+        justify-content: center;
+    }
 
     /* PNG FIGURES */
     .viz img {
@@ -160,22 +160,19 @@ section {
     }
 
     /* PLOTLY / HTML FIGURES */
-    .viz {
+    .viz iframe {
 
-    max-width: 760px;
+        width: 100%;
 
-    width: 100%;
+        height: 760px;
 
-    display: flex;
+        border: none;
 
-    justify-content: center;
+        display: block;
 
-    align-items: center;
+        background: white;
+    }
 
-    margin: 8px auto 0px auto;
-
-    overflow-x: hidden;
-}
     h2 {
 
         font-family: 'Playfair Display', serif;
@@ -197,55 +194,59 @@ section {
 
         line-height: 1.85;
     }
+
     /* TWO FIGURES SIDE BY SIDE */
-.viz-row {
+    .viz-row {
 
-    max-width: 1400px;
+        max-width: 1400px;
 
-    margin: 50px auto 30px auto;
+        margin: 50px auto 30px auto;
 
-    display: flex;
+        display: flex;
 
-    gap: 30px;
+        gap: 30px;
 
-    align-items: flex-start;
-}
+        align-items: flex-start;
+    }
 
-.viz-half {
+    .viz-half {
 
-    flex: 1;
-}
+        flex: 1;
+    }
 
-.viz-half iframe {
+    .viz-half iframe {
 
-    width: 100%;
+        width: 100%;
 
-    height: 720px;
+        height: 720px;
 
-    border: none;
+        border: none;
 
-    border-radius: 10px;
+        border-radius: 10px;
 
-    overflow: hidden;
+        overflow: hidden;
 
-    background: white;
-}
-/* ekstra højde for export map */
-.tall-viz iframe {
-    height: 860px;
-}
+        background: white;
+    }
+
+    /* EXTRA HEIGHT FOR EXPORT MAP */
+    .tall-viz iframe {
+
+        height: 860px;
+    }
+
     .fig-caption {
 
-    max-width: 760px;
+        max-width: 760px;
 
-    margin: 0 auto 8px auto;
+        margin: 0 auto 8px auto;
 
-    font-size: 14px;
+        font-size: 14px;
 
-    color: #666;
+        color: #666;
 
-    line-height: 1.5;
-}
+        line-height: 1.5;
+    }
 
     .references {
 
