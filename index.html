@@ -17,19 +17,17 @@
     body {
         font-family: 'Source Serif 4', serif;
         margin: 0;
-
-        /* CLEAN WHITE BACKGROUND */
         background-color: #ffffff;
-
         color: #222;
-
         line-height: 1.75;
     }
 
     /* HEADER */
     header {
 
-        min-height: 52vh;
+        position: relative;
+
+        min-height: 42vh;
 
         display: flex;
 
@@ -37,7 +35,7 @@
 
         align-items: center;
 
-        padding: 40px 20px;
+        padding: 30px 20px;
 
         background: #bcc6c1;
     }
@@ -45,20 +43,20 @@
     /* HEADER CONTENT */
     .header-box {
 
-    max-width: 700px;
+        max-width: 700px;
 
-    padding: 18px 26px;
+        margin: 0 auto;
 
-    margin: 0 auto;
+        text-align: center;
 
-    background: #d7dfda;
+        background: transparent;
 
-    border-radius: 12px;
+        padding: 0;
 
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        box-shadow: none;
 
-    text-align: center;
-}
+        border-radius: 0;
+    }
 
     /* TITLE */
     header h1 {
@@ -69,7 +67,7 @@
 
         line-height: 1.02;
 
-        margin-bottom: 24px;
+        margin-bottom: 10px;
 
         color: #111;
     }
@@ -86,6 +84,24 @@
         line-height: 1.7;
 
         color: #4b4b4b;
+    }
+
+    /* AUTHORS */
+    .authors {
+
+        position: absolute;
+
+        left: 30px;
+
+        bottom: 25px;
+
+        font-size: 15px;
+
+        line-height: 1.8;
+
+        color: #4b4b4b;
+
+        text-align: left;
     }
 
     section {
@@ -110,24 +126,6 @@
 
         box-shadow: 0 4px 12px rgba(0,0,0,0.04);
     }
-
-    /* AUTHORS */
-    .authors {
-
-    position: absolute;
-
-    left: 28px;
-
-    bottom: 90px;
-
-    font-size: 15px;
-
-    line-height: 1.8;
-
-    color: #4b4b4b;
-
-    text-align: left;
-}
 
     /* VISUALIZATION CONTAINER */
     .viz {
