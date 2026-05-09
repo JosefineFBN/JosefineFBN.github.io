@@ -202,8 +202,121 @@
     </div>
 
 </header>
+    
+<section id="viz1">
+
+    <div class="text-box">
+        <p>
+With a dataset of the following countries: Bangladesh, Brazil, China, Denmark, Germany, Pakistan, Sweden, Switzerland & Uganda, tis anaysis examines CO2 emissions per capita. <br>
+Take a look at the map. The European countries clearly emitted a lot more CO_2e per capita in the past, while drastically reducing those numbers every decade. Germany, Switzerland, Denmark, and Sweden all reduced emissions per capita significantly, by more than half for the latter two countries. Impressive progress! Right?
+        </p>
+    </div>
+   
+<div class="viz">
+    <iframe 
+        src="Visualization/co2_per_capita_over_time.html"
+        scrolling="no">
+    </iframe>
+</div>
+
+    <p class="fig-caption">
+       Figure 2: Graphs for each countries showing CO2 impact per. capita over the past 50 years. The countries include western countries (Denmark, Sweden, Germany, Switzerland), emerging economies (Brazin & China), & developing countries (Pakistan, Bangladesh & Uganda)
+    </p>
+
+    <div class="text-box">
+        <p>
+Starting from much lower levels, Brazil, Uganda, Pakistan, Bangladesh, and China have all significantly increased emissions per capita. In the same period, Uganda has increased by around 80%, China has increased by more than 900%, surpassing the European countries in the past two decades. China is now above the world average, while only Germany among the selected European countries has not yet dropped below that level. When looking at countries’ CO2 impact per. capita, comparison is inevitable. The arising question when comparing is simple; why do countries differ in CO2 impact per capita? Why do some countries emit more than others? And, is it only the whealthy countries that can afford the green transition? Or could other factors explain the opposite trends?
+         </p>
+    </div>
 
 <section id="viz1">
+
+    <div class="text-box">
+        <h2>What does the GDP index reveal?</h2>
+
+        <p>
+Comparing only the countries total CO2 per capita provides a partial picture of the countries sustainable status. By including GDP as a parameter for economic activity, it becomes possible to compare countries’ environmental impact across different levels of economic development. Moreover, this analytic lense might potentially reveal whether green transition is only for wealthy western countries.
+        </p>
+    </div>
+
+    <div class="viz">
+        <img src="Images/Linear_regression_GDP_CO2.png">
+    </div>
+
+    <p class="fig-caption">
+       Figure 2: Graphs for each countries showing CO2 impact per. capita related to the countries’ GDP per. capita. The countries include western countries (Denmark, Sweden, Germany, Switzerland), emerging economies (Brazin & China), & developing countries (Pakistan, Bangladesh & Uganda)
+    </p>
+
+    <div class="text-box">
+        <p>
+Taking a closer look at the dataset’s countries’ CO2 impact per. capita related the countries’ GDP per. capita, different patterns appear. Note that the z axis is on a logarithmic scale. <br>
+Three tendencies appear, one being the western countries’ CO2 impact per. decrease while the GDP increase. The second tendency is for the emerging economies,  where it is seen that the CO2 per capita increase over time as well as the GDP. The last tendency is for the developing countries and appears to be an increase in GDP with a smaller increase in CO2 per capita. Taking the GPD into consideration, it seems to be the western countries that manage to decouple economic growth from CO2 impact. Taking a closer look at the graphs, there seems to be a tipping point around 1000-10.000 USD per. capita, where countries can afford the green transition and hereby decrease CO2 per capita. The question then becomes: Why is it only the western countries? Which tendencies affect how the western countries are able to reduce their CO2 per capita?
+         </p>
+
+        <h2>Energy sector!</h2>
+
+        <p>
+GDP is a parameter often used to measure prosperity of a country. According to Keri (2025)  energy is a parameter with close connection to prosperity, given that energy represents the necessity to most economic activities.  <br>
+Taking a look at figure X, the percentage distribution of energy production by different energy sources in Brazil and Danmark is illustrated. Even though the two countries have very different the CO2 impact per. capita, the figure indicates two energy grid consistent of mostly renewable energy.
+        </p>
+    </div>
+
+    <div class="viz">
+    <iframe 
+        src="Visualization/share_of_energy_sources.html"
+        scrolling="no">
+    </iframe>
+</div>
+
+    <p class="fig-caption">
+       Brazil and Denmark's share of enrgy sources in their energy grid.
+    </p>
+
+    <div class="text-box">
+        <p>
+Looking at Denmark’s energy grid’s development from 1990 to now, major differences appear. As the majority of the energy grids’ previously relied on fossil fuels, the energy grid today primary relies on renewable energy. Based on the percentage distribution, this transition from fossil fuel to renewable energy appear to be a relatively recent tendency, as the share of renewable energy increased from 31,9% in 2010 to 81,6% today.<br>
+Looking at the energy grid from Brazil the tendencies is entirely different. Categorizing hydro as a renewable energy, the share of renewable energy has been Brazil’s primary energy source since 1990.  What is interesting here, is that fossil fuel has increased 4,5% in 1990 to 14,2% today, illustrating an opposite tendency compared to Denmark. <br>
+However, even though Denmark and Brazil’s CO2 impact per capita is following entirely different tendencies, their energy grids must be considered similar as they are largely dependent on renewable energy.
+         </p>
+
+         <p>
+One must dig deeper into the energy sector of Brazil and Denmark to examine whether energy plays a role for the impact per capita. A way of doing so is to look at the social behavior in relation to energy. The transport sector plays a crucial role in relation to a countrie’s energy grid, and might indicate whether the citizens’ behavior have transitioned as well. <br>
+Looking at a dataset of locations of gas stations (Overpass Turbo, n.d.) and EV charging stations (openchargemap.org, n.d.) in Brazil and Denmark, the citizens’ behavior reveals the comprehensive green transition . Taking a look at figure X, the share of EV charging stations is 55,6% in Denmark, whereas the Chargin stations account for 9,5% of the infrastructure in Brazil.
+            </p>
+    </div>
+
+    <div class="viz">
+    <iframe 
+        src="Visualization/GINI_VS_education.html"
+        scrolling="no">
+    </iframe>
+</div>
+
+    <p class="fig-caption">
+       The share of EV charging station in Brazil and Denmark.
+    </p>
+
+    <div class="text-box">
+        <p>
+This dataset indicates the green transition of the electricity grid is well embedded in the Danish society, and reflects interaction between supply and demand, which is evident in the large proportion of EV charging stations. <br>
+Despite Brazil’s green energy grid, the proportion of EV charging stations is surprisingly low. Whether this can be explained by the fact that only around 20-25% of the population has access to a car (Motor Vehicle in Use 2021, n.d.), the costs associated with electric vehicles, or priorities by the government remains unknown, but the data reflects a society in which the transport sector has not yet undergone a green transition.
+         </p>
+
+        <h2>The significance of education</h2>
+
+        <p>
+Another parameter that is used to both measure and explain a countries wealth is their educational system (Måske mere spørgende?). But how does it look when comparing the educational system for a country that has decoupled the economic growth from the CO2 emissions, with a country that is in the developing phase and still has not? And can the educational system be used to explain the countries CO2 emissions indirectly?  <br>
+To study this further a look in to the Danish and Chines educational systems has been made. In figure below, a distribution of the educational level of the two countries populations can be seen.
+        </p>
+    </div>
+
+    <div class="viz">
+        <img src="Images/education.png">
+    </div>
+
+    <p class="fig-caption">
+       The vizulisation shows the distribution of the educational level of the population of Denmark and China.
+    </p>
 
 </section>
 
