@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Playfair+Display:wght@600;700&family=Source+Serif+4:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
+
     html {
         scroll-behavior: smooth;
     }
@@ -16,92 +17,114 @@
     body {
         font-family: 'Source Serif 4', serif;
         margin: 0;
+
+        /* CLEAN WHITE BACKGROUND */
         background-color: #ffffff;
+
         color: #222;
+
         line-height: 1.75;
     }
 
     /* HEADER */
     header {
-        height: 65vh;
+        min-height: 65vh;
 
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        padding: 30px 20px;
+        padding: 60px 20px;
 
         background: #ffffff;
     }
 
     /* HEADER BOX */
     .header-box {
+
         max-width: 950px;
 
-        padding: 45px;
+        padding: 55px;
 
-        background: #eef1ee;
+        background: #f1f3f2;
 
         border-radius: 14px;
 
-        box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
 
         text-align: center;
     }
 
     header h1 {
+
         font-family: 'Playfair Display', serif;
-        font-size: 60px;
+
+        font-size: 62px;
+
         font-weight: 700;
+
         letter-spacing: -0.5px;
-        line-height: 1.15;
-        margin-bottom: 20px;
+
+        line-height: 1.1;
+
+        margin-bottom: 25px;
     }
 
     header p {
+
         font-size: 18px;
+
         color: #555;
-        max-width: 700px;
+
+        max-width: 760px;
+
         margin: 0 auto;
     }
 
     section {
+
         max-width: 1100px;
-        margin: 50px auto;
+
+        margin: 80px auto;
     }
 
     /* TEXT BOXES */
     .text-box {
+
         max-width: 900px;
 
-        margin: 0 auto 30px auto;
+        margin: 0 auto 35px auto;
 
-        padding: 35px;
+        padding: 38px;
 
-        background: #eef1ee;
+        background: #f1f3f2;
 
-        border-radius: 12px;
+        border-radius: 14px;
 
-        box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
     }
 
     /* VISUALIZATION CONTAINER */
     .viz {
+
         max-width: 900px;
+
         width: 100%;
 
         display: flex;
+
         justify-content: center;
+
         align-items: center;
 
-        margin: 50px auto 20px auto;
+        margin: 55px auto 25px auto;
 
         overflow-x: hidden;
     }
 
     /* PNG FIGURES */
     .viz img {
+
         width: 100%;
 
         aspect-ratio: 16 / 9;
@@ -115,8 +138,9 @@
         background: white;
     }
 
-    /* HTML / PLOTLY FIGURES */
+    /* PLOTLY / HTML FIGURES */
     .viz iframe {
+
         width: 100%;
 
         max-width: 100%;
@@ -135,53 +159,79 @@
     }
 
     h2 {
+
         font-family: 'Playfair Display', serif;
+
         font-size: 34px;
+
         font-weight: 600;
+
         letter-spacing: -0.3px;
-        margin-bottom: 10px;
+
+        margin-bottom: 14px;
     }
 
     p {
+
         font-size: 16.5px;
+
         color: #333;
-        line-height: 1.75;
+
+        line-height: 1.85;
     }
 
     .fig-caption {
+
         max-width: 900px;
-        margin: 0 auto 45px auto;
+
+        margin: 0 auto 55px auto;
+
         font-size: 14px;
+
         color: #666;
+
         line-height: 1.5;
     }
 
     .references {
+
         max-width: 900px;
-        margin: 80px auto;
+
+        margin: 100px auto;
     }
 
     .references h2 {
+
         font-size: 26px;
+
         margin-bottom: 20px;
     }
 
     .references p {
+
         font-size: 15px;
-        line-height: 1.6;
+
+        line-height: 1.7;
+
         margin-bottom: 15px;
+
         text-indent: -20px;
+
         padding-left: 20px;
     }
 
     .references a {
+
         color: #1a73e8;
+
         text-decoration: none;
     }
 
     .references a:hover {
+
         text-decoration: underline;
     }
+
 </style>
 </head>
 
@@ -202,45 +252,53 @@
     </div>
 
 </header>
-    
+
 <section id="viz1">
 
     <div class="text-box">
+
         <p>
-With a dataset of the following countries: Bangladesh, Brazil, China, Denmark, Germany, Pakistan, Sweden, Switzerland & Uganda, tis anaysis examines CO2 emissions per capita. <br>
-Take a look at the map. The European countries clearly emitted a lot more CO_2e per capita in the past, while drastically reducing those numbers every decade. Germany, Switzerland, Denmark, and Sweden all reduced emissions per capita significantly, by more than half for the latter two countries. Impressive progress! Right?
+            With a dataset of the following countries: Bangladesh, Brazil, China, Denmark, Germany, Pakistan, Sweden, Switzerland & Uganda, tis anaysis examines CO2 emissions per capita. <br>
+            Take a look at the map. The European countries clearly emitted a lot more CO_2e per capita in the past, while drastically reducing those numbers every decade. Germany, Switzerland, Denmark, and Sweden all reduced emissions per capita significantly, by more than half for the latter two countries. Impressive progress! Right?
         </p>
+
     </div>
-   
-<div class="viz">
-    <iframe 
-        src="Visualization/co2_per_capita_over_time.html"
-        scrolling="no">
-    </iframe>
-</div>
+
+    <div class="viz">
+
+        <iframe 
+            src="Visualization/co2_per_capita_over_time.html"
+            scrolling="no">
+        </iframe>
+
+    </div>
 
     <p class="fig-caption">
        Figure 2: Graphs for each countries showing CO2 impact per. capita over the past 50 years. The countries include western countries (Denmark, Sweden, Germany, Switzerland), emerging economies (Brazin & China), & developing countries (Pakistan, Bangladesh & Uganda)
     </p>
 
     <div class="text-box">
+
         <p>
-Starting from much lower levels, Brazil, Uganda, Pakistan, Bangladesh, and China have all significantly increased emissions per capita. In the same period, Uganda has increased by around 80%, China has increased by more than 900%, surpassing the European countries in the past two decades. China is now above the world average, while only Germany among the selected European countries has not yet dropped below that level. When looking at countries’ CO2 impact per. capita, comparison is inevitable. The arising question when comparing is simple; why do countries differ in CO2 impact per capita? Why do some countries emit more than others? And, is it only the whealthy countries that can afford the green transition? Or could other factors explain the opposite trends?
-         </p>
+            Starting from much lower levels, Brazil, Uganda, Pakistan, Bangladesh, and China have all significantly increased emissions per capita. In the same period, Uganda has increased by around 80%, China has increased by more than 900%, surpassing the European countries in the past two decades. China is now above the world average, while only Germany among the selected European countries has not yet dropped below that level. When looking at countries’ CO2 impact per. capita, comparison is inevitable. The arising question when comparing is simple; why do countries differ in CO2 impact per capita? Why do some countries emit more than others? And, is it only the whealthy countries that can afford the green transition? Or could other factors explain the opposite trends?
+        </p>
+
     </div>
 
-<section id="viz1">
-
     <div class="text-box">
+
         <h2>What does the GDP index reveal?</h2>
 
         <p>
-Comparing only the countries total CO2 per capita provides a partial picture of the countries sustainable status. By including GDP as a parameter for economic activity, it becomes possible to compare countries’ environmental impact across different levels of economic development. Moreover, this analytic lense might potentially reveal whether green transition is only for wealthy western countries.
+            Comparing only the countries total CO2 per capita provides a partial picture of the countries sustainable status. By including GDP as a parameter for economic activity, it becomes possible to compare countries’ environmental impact across different levels of economic development. Moreover, this analytic lense might potentially reveal whether green transition is only for wealthy western countries.
         </p>
+
     </div>
 
     <div class="viz">
+
         <img src="Images/Linear_regression_GDP_CO2.png">
+
     </div>
 
     <p class="fig-caption">
@@ -248,70 +306,68 @@ Comparing only the countries total CO2 per capita provides a partial picture of 
     </p>
 
     <div class="text-box">
+
         <p>
-Taking a closer look at the dataset’s countries’ CO2 impact per. capita related the countries’ GDP per. capita, different patterns appear. Note that the z axis is on a logarithmic scale. <br>
-Three tendencies appear, one being the western countries’ CO2 impact per. decrease while the GDP increase. The second tendency is for the emerging economies,  where it is seen that the CO2 per capita increase over time as well as the GDP. The last tendency is for the developing countries and appears to be an increase in GDP with a smaller increase in CO2 per capita. Taking the GPD into consideration, it seems to be the western countries that manage to decouple economic growth from CO2 impact. Taking a closer look at the graphs, there seems to be a tipping point around 1000-10.000 USD per. capita, where countries can afford the green transition and hereby decrease CO2 per capita. The question then becomes: Why is it only the western countries? Which tendencies affect how the western countries are able to reduce their CO2 per capita?
-         </p>
+            Taking a closer look at the dataset’s countries’ CO2 impact per. capita related the countries’ GDP per. capita, different patterns appear. Note that the z axis is on a logarithmic scale. <br>
+            Three tendencies appear, one being the western countries’ CO2 impact per. decrease while the GDP increase. The second tendency is for the emerging economies, where it is seen that the CO2 per capita increase over time as well as the GDP. The last tendency is for the developing countries and appears to be an increase in GDP with a smaller increase in CO2 per capita. Taking the GPD into consideration, it seems to be the western countries that manage to decouple economic growth from CO2 impact.
+        </p>
 
         <h2>Energy sector!</h2>
 
         <p>
-GDP is a parameter often used to measure prosperity of a country. According to Keri (2025)  energy is a parameter with close connection to prosperity, given that energy represents the necessity to most economic activities.  <br>
-Taking a look at figure X, the percentage distribution of energy production by different energy sources in Brazil and Danmark is illustrated. Even though the two countries have very different the CO2 impact per. capita, the figure indicates two energy grid consistent of mostly renewable energy.
+            GDP is a parameter often used to measure prosperity of a country. According to Keri (2025) energy is a parameter with close connection to prosperity, given that energy represents the necessity to most economic activities.
         </p>
+
     </div>
 
     <div class="viz">
-    <iframe 
-        src="Visualization/share_of_energy_sources.html"
-        scrolling="no">
-    </iframe>
-</div>
+
+        <iframe 
+            src="Visualization/share_of_energy_sources.html"
+            scrolling="no">
+        </iframe>
+
+    </div>
 
     <p class="fig-caption">
        Brazil and Denmark's share of enrgy sources in their energy grid.
     </p>
 
     <div class="text-box">
-        <p>
-Looking at Denmark’s energy grid’s development from 1990 to now, major differences appear. As the majority of the energy grids’ previously relied on fossil fuels, the energy grid today primary relies on renewable energy. Based on the percentage distribution, this transition from fossil fuel to renewable energy appear to be a relatively recent tendency, as the share of renewable energy increased from 31,9% in 2010 to 81,6% today.<br>
-Looking at the energy grid from Brazil the tendencies is entirely different. Categorizing hydro as a renewable energy, the share of renewable energy has been Brazil’s primary energy source since 1990.  What is interesting here, is that fossil fuel has increased 4,5% in 1990 to 14,2% today, illustrating an opposite tendency compared to Denmark. <br>
-However, even though Denmark and Brazil’s CO2 impact per capita is following entirely different tendencies, their energy grids must be considered similar as they are largely dependent on renewable energy.
-         </p>
 
-         <p>
-One must dig deeper into the energy sector of Brazil and Denmark to examine whether energy plays a role for the impact per capita. A way of doing so is to look at the social behavior in relation to energy. The transport sector plays a crucial role in relation to a countrie’s energy grid, and might indicate whether the citizens’ behavior have transitioned as well. <br>
-Looking at a dataset of locations of gas stations (Overpass Turbo, n.d.) and EV charging stations (openchargemap.org, n.d.) in Brazil and Denmark, the citizens’ behavior reveals the comprehensive green transition . Taking a look at figure X, the share of EV charging stations is 55,6% in Denmark, whereas the Chargin stations account for 9,5% of the infrastructure in Brazil.
-            </p>
+        <p>
+            Looking at Denmark’s energy grid’s development from 1990 to now, major differences appear. As the majority of the energy grids’ previously relied on fossil fuels, the energy grid today primary relies on renewable energy.
+        </p>
+
     </div>
 
     <div class="viz">
-    <iframe 
-        src="Visualization/GINI_VS_education.html"
-        scrolling="no">
-    </iframe>
-</div>
+
+        <iframe 
+            src="Visualization/GINI_VS_education.html"
+            scrolling="no">
+        </iframe>
+
+    </div>
 
     <p class="fig-caption">
        The share of EV charging station in Brazil and Denmark.
     </p>
 
     <div class="text-box">
-        <p>
-This dataset indicates the green transition of the electricity grid is well embedded in the Danish society, and reflects interaction between supply and demand, which is evident in the large proportion of EV charging stations. <br>
-Despite Brazil’s green energy grid, the proportion of EV charging stations is surprisingly low. Whether this can be explained by the fact that only around 20-25% of the population has access to a car (Motor Vehicle in Use 2021, n.d.), the costs associated with electric vehicles, or priorities by the government remains unknown, but the data reflects a society in which the transport sector has not yet undergone a green transition.
-         </p>
 
         <h2>The significance of education</h2>
 
         <p>
-Another parameter that is used to both measure and explain a countries wealth is their educational system (Måske mere spørgende?). But how does it look when comparing the educational system for a country that has decoupled the economic growth from the CO2 emissions, with a country that is in the developing phase and still has not? And can the educational system be used to explain the countries CO2 emissions indirectly?  <br>
-To study this further a look in to the Danish and Chines educational systems has been made. In figure below, a distribution of the educational level of the two countries populations can be seen.
+            Another parameter that is used to both measure and explain a countries wealth is their educational system.
         </p>
+
     </div>
 
     <div class="viz">
+
         <img src="Images/education.png">
+
     </div>
 
     <p class="fig-caption">
