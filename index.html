@@ -203,25 +203,10 @@
         align-items: flex-start;
     }
 
-    .viz-half {
-
-        flex: 1;
-    }
-
-    .viz-half iframe {
-
-        width: 100%;
-
-        height: 720px;
-
-        border: none;
-
-        border-radius: 10px;
-
-        overflow: hidden;
-
-        background: white;
-    }
+    .tight-viz iframe {
+    display: block;
+    margin-bottom: -10px;
+}
 
     /* EXTRA HEIGHT FOR EXPORT MAP */
     .tall-viz iframe {
@@ -327,7 +312,7 @@
 
     </div>
 
-    <div class="viz">
+    <div class="viz tight-viz">
 
         <iframe 
             src="Visualization/co2_per_capita_over_time.html"
